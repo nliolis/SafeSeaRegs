@@ -19,11 +19,11 @@
       "charter": {
         "statusLbl": "Open 27&ndash;<73\"",
         "status": "open",
-        "size": "Two keeper ranges: <b>27&ndash;47\"</b> and <b>47&ndash;&lt;73\"</b> CFL. 73\"+ is a separate “trophy” fishery (see below).",
+        "size": "Two keeper ranges: <b>27&ndash;47\"</b> and <b>47&ndash;&lt;73\"</b> CFL. 73\"+ is a separate \u201ctrophy\u201d fishery (see below).",
         "limit": "<b>3 per vessel per day/trip</b> when fishing recreationally (27&ndash;&lt;73\"). With a <b>commercial sale endorsement</b> you may instead fish that day under General-category commercial rules &mdash; the size of the FIRST bluefin you keep decides the mode (see below).",
         "permit": "HMS <b>Charter/Headboat</b> permit. Report every bluefin kept or discarded dead within <b>24 hrs</b>.",
         "notes": [
-          "<b>The first bluefin you retain sets the day’s mode:</b> keep a <b>73\"+ fish first &rarr; commercial</b> (General-category) rules &amp; limits apply for the whole day; keep a <b>27&ndash;&lt;73\" fish first &rarr; recreational</b> (3-fish Angling) rules apply. You cannot mix the two in one day.",
+          "<b>The first bluefin you retain sets the day\u2019s mode:</b> keep a <b>73\"+ fish first &rarr; commercial</b> (General-category) rules &amp; limits apply for the whole day; keep a <b>27&ndash;&lt;73\" fish first &rarr; recreational</b> (3-fish Angling) rules apply. You cannot mix the two in one day.",
           "Commercial mode also requires a commercial sale endorsement and selling only to a permitted dealer (see the Commercial tab).",
           "No targeted bluefin in the Gulf of America.",
           "No bluefin may be kept if a hammerhead shark is aboard.",
@@ -109,7 +109,7 @@
     },
     "mahi": {
       "rec": {
-        "statusLbl": "Open",
+        "statusLbl": "TEST OK",
         "status": "open",
         "size": "No federal minimum in the Mid-Atlantic/Greater Atlantic. (FL Atlantic: 20\" fork; U.S. Caribbean: 24\" fork.)",
         "limit": "Atlantic federal: <b>10 per person/day, max 54 per vessel/day</b> (headboats exempt from the vessel cap). <b>FL Atlantic is stricter: 5/person, 30/vessel</b>, no captain/crew limit.",
@@ -127,7 +127,7 @@
         "permit": "No HMS permit; council-managed. For-hire vessels need the federal Dolphin/Wahoo for-hire permit &amp; must file trip reports.",
         "notes": [
           "Must be landed with head and fins intact.",
-          "State rules (esp. FL) can be tighter — check where you land."
+          "State rules (esp. FL) can be tighter \u2014 check where you land."
         ]
       },
       "comm": {
@@ -161,7 +161,7 @@
         "limit": "<b>1 shark per VESSEL per trip</b>, PLUS 1 Atlantic sharpnose AND 1 bonnethead per PERSON.",
         "permit": "HMS <b>Charter/Headboat</b> permit WITH the <b>Shark Endorsement</b>. Circle-hook rule applies south of 41&deg;43&prime;N. For-hire <b>eVTR</b> reporting required.",
         "notes": [
-          "SHORTFIN MAKO: retention ZERO — release dead or alive.",
+          "SHORTFIN MAKO: retention ZERO \u2014 release dead or alive.",
           "Land sharks whole with fins naturally attached."
         ]
       },
