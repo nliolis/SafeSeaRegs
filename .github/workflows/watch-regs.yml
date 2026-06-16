@@ -10,10 +10,7 @@ jobs:
   watch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+      - uses: actions/checkout@v5
       - name: Check the Federal Register
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -21,7 +18,7 @@ jobs:
           MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
           MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
           SMS_TO: ${{ secrets.SMS_TO }}
-        run: python watcher.py
+        run: python3 watcher.py
       - name: Remember what we've seen
         run: |
           git config user.name "safesea-bot"
