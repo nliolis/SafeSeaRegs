@@ -1,0 +1,43 @@
+name: Apply approved reg change
+on:
+  issue_comment:
+    types: [created]
+permissions:
+  contents: write
+  issues: write
+jobs:
+  apply:
+    if: ${{ github.event.issue.state == 'open' && github.event.comment.user.login == github.repository_owner }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Approve or reject
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          c=$(printf '%s' "$COMMENT_BODY" | tr '[:upper:]' '[:lower:]' | tr -d '[:space:]')
+          if [ "$c" = "approve" ]; then
+            python apply.py
+            git config user.name "safesea-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add regs.json
+            git commit -m "apply approved reg change (#${ISSUE_NUMBER})" || echo "no change"
+            git push || echo "nothing to push"
+            curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" \
+              -d '{"body":"Applied to regs.json. Your app picks it up on next launch."}'
+            curl -s -X PATCH -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER" -d '{"state":"closed"}'
+          elif [ "$c" = "reject" ]; then
+            curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER/comments" \
+              -d '{"body":"Rejected. Nothing changed."}'
+            curl -s -X PATCH -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER" -d '{"state":"closed"}'
+          fi
