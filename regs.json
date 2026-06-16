@@ -1,0 +1,181 @@
+{
+  "_comment": "SafeSea regulations feed. Edit values when NOAA changes them, host this file at a public URL (e.g. GitHub raw), and paste that URL into the app Regs tab > Auto-Update Feed. The app merges these over its built-in data on launch.",
+  "verified": "2026-06-16",
+  "alert": "",
+  "species": {
+    "bluefin": {
+      "rec": {
+        "statusLbl": "Open 27&ndash;<73\"",
+        "status": "open",
+        "size": "Two keeper ranges: <b>27&ndash;47\"</b> and <b>47&ndash;&lt;73\"</b> CFL. 73\"+ is a separate &ldquo;trophy&rdquo; fishery (see below).",
+        "limit": "<b>Private: 2 per vessel per day/trip</b> &mdash; only 1 may be 47&ndash;&lt;73\"; the other must be 27&ndash;&lt;47\". <b>Charter/Headboat: 3.</b> Per vessel, NOT per angler.",
+        "permit": "HMS <b>Angling</b> permit (private) or HMS <b>Charter/Headboat</b> permit.",
+        "notes": [
+          "No targeted bluefin in the Gulf of America (spawning grounds).",
+          "You cannot keep ANY bluefin if a hammerhead shark is aboard or was offloaded.",
+          "Report every bluefin kept or discarded dead within <b>24 hrs</b> (HMS Permit Shop, the catch-report app, or 888-872-8862)."
+        ]
+      },
+      "charter": {
+        "statusLbl": "Open 27&ndash;<73\"",
+        "status": "open",
+        "size": "Two keeper ranges: <b>27&ndash;47\"</b> and <b>47&ndash;&lt;73\"</b> CFL. 73\"+ is a separate “trophy” fishery (see below).",
+        "limit": "<b>3 per vessel per day/trip</b> when fishing recreationally (27&ndash;&lt;73\"). With a <b>commercial sale endorsement</b> you may instead fish that day under General-category commercial rules &mdash; the size of the FIRST bluefin you keep decides the mode (see below).",
+        "permit": "HMS <b>Charter/Headboat</b> permit. Report every bluefin kept or discarded dead within <b>24 hrs</b>.",
+        "notes": [
+          "<b>The first bluefin you retain sets the day’s mode:</b> keep a <b>73\"+ fish first &rarr; commercial</b> (General-category) rules &amp; limits apply for the whole day; keep a <b>27&ndash;&lt;73\" fish first &rarr; recreational</b> (3-fish Angling) rules apply. You cannot mix the two in one day.",
+          "Commercial mode also requires a commercial sale endorsement and selling only to a permitted dealer (see the Commercial tab).",
+          "No targeted bluefin in the Gulf of America.",
+          "No bluefin may be kept if a hammerhead shark is aboard.",
+          "For-hire vessels must file electronic trip reports (eVTR)."
+        ]
+      },
+      "comm": {
+        "statusLbl": "Open / RFDs",
+        "status": "partial",
+        "size": "Commercial sale: <b>73\"+</b> only. Head-off for sale must be &ge;54\" pectoral-fin CFL.",
+        "limit": "Set <b>in-season by NOAA</b>; varies by category &amp; time period &mdash; full General-category schedule below.",
+        "permit": "Atlantic Tunas permit &mdash; <b>General, Harpoon, Trap, Purse Seine,</b> or <b>Longline</b> category (or HMS Charter/Headboat w/ commercial sale endorsement). Sell only to permitted dealers; daily catch reporting required.",
+        "notes": [
+          "Each General-category time period (Jan&ndash;Mar, Jun&ndash;Aug, Sep, Oct&ndash;Nov, Dec) closes the instant its subquota is hit.",
+          "Harpoon category (Jun 1&ndash;Nov 15, 2026): up to 5 fish 73\"+ per vessel/day.",
+          "Tag-and-release of all sizes is still allowed during commercial closures."
+        ]
+      }
+    },
+    "yellowfin": {
+      "rec": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "<b>27\"</b> curved fork length minimum.",
+        "limit": "<b>3 per person per day</b> (default).",
+        "permit": "Federal <b>HMS Angling</b> permit (some states also require a recreational offshore landing permit).",
+        "notes": [
+          "Speargun-caught Atlantic tunas may not be sold."
+        ]
+      },
+      "charter": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "<b>27\"</b> curved fork length minimum.",
+        "limit": "<b>3 per person per day</b> (default) when fishing recreationally.",
+        "permit": "Federal <b>HMS Charter/Headboat</b> permit. For-hire <b>eVTR</b> trip reporting required.",
+        "notes": [
+          "With a commercial sale endorsement, selling tunas follows commercial rules."
+        ]
+      },
+      "comm": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "27\" CFL min (head-off for sale must leave &ge;27\" from tail fork to the cut).",
+        "limit": "No federal daily trip limit for permitted vessels (market/handling limits apply) &mdash; follow the current HMS Commercial Compliance Guide.",
+        "permit": "Atlantic Tunas permit (commercial). Sell only to permitted dealers.",
+        "notes": [
+          "ICCAT-managed; landings monitored and rules can change in-season."
+        ]
+      }
+    },
+    "bigeye": {
+      "rec": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "<b>27\"</b> curved fork length minimum.",
+        "limit": "<b>3 per person per day</b> (the rec tuna limit covers bigeye, yellowfin &amp; albacore).",
+        "permit": "Federal <b>HMS Angling</b> permit.",
+        "notes": [
+          "Same handling &amp; reporting framework as other Atlantic tunas."
+        ]
+      },
+      "charter": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "<b>27\"</b> curved fork length minimum.",
+        "limit": "<b>3 per person per day</b> (bigeye/yellowfin/albacore combined).",
+        "permit": "Federal <b>HMS Charter/Headboat</b> permit. For-hire <b>eVTR</b> reporting required.",
+        "notes": [
+          "Same handling &amp; reporting framework as other Atlantic tunas."
+        ]
+      },
+      "comm": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "27\" CFL minimum.",
+        "limit": "No federal daily trip limit for permitted vessels &mdash; follow the HMS Commercial Compliance Guide.",
+        "permit": "Atlantic Tunas permit (commercial). Sell only to permitted dealers.",
+        "notes": [
+          "ICCAT-managed; quotas can shift year to year."
+        ]
+      }
+    },
+    "mahi": {
+      "rec": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "No federal minimum in the Mid-Atlantic/Greater Atlantic. (FL Atlantic: 20\" fork; U.S. Caribbean: 24\" fork.)",
+        "limit": "Atlantic federal: <b>10 per person/day, max 54 per vessel/day</b> (headboats exempt from the vessel cap). <b>FL Atlantic is stricter: 5/person, 30/vessel</b>, no captain/crew limit.",
+        "permit": "No HMS permit (managed by the regional councils). State saltwater license as required.",
+        "notes": [
+          "Must be landed with head and fins intact.",
+          "State rules (especially Florida) can be tighter than federal &mdash; check where you land."
+        ]
+      },
+      "charter": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "No federal Mid-Atlantic minimum. (FL Atlantic: 20\" fork.)",
+        "limit": "<b>10 per person/day; charter vessel cap 54</b> (headboats exempt from the cap). FL Atlantic for-hire: 5/person.",
+        "permit": "No HMS permit; council-managed. For-hire vessels need the federal Dolphin/Wahoo for-hire permit &amp; must file trip reports.",
+        "notes": [
+          "Must be landed with head and fins intact.",
+          "State rules (esp. FL) can be tighter — check where you land."
+        ]
+      },
+      "comm": {
+        "statusLbl": "Open",
+        "status": "open",
+        "size": "No federal Mid-Atlantic minimum; regional rules vary.",
+        "limit": "Commercial trip limits and an annual catch limit apply &mdash; the fishery closes when the ACL is reached. Check SAFMC/NOAA bulletins.",
+        "permit": "Federal Atlantic <b>Dolphin/Wahoo</b> commercial permit (council-managed).",
+        "notes": [
+          "Sold only through licensed dealers."
+        ]
+      }
+    },
+    "sharks": {
+      "rec": {
+        "statusLbl": "Open / limits",
+        "status": "partial",
+        "size": "<b>54\" fork length</b> minimum for most authorized species (no minimum for Atlantic sharpnose &amp; bonnethead).",
+        "limit": "<b>1 shark per VESSEL per trip</b> (authorized species), PLUS <b>1 Atlantic sharpnose</b> AND <b>1 bonnethead per PERSON</b> per trip.",
+        "permit": "HMS <b>Angling</b> permit WITH the free <b>Shark Endorsement</b> (online ID/handling course). <b>Non-offset, non-stainless circle hooks</b> required when fishing for sharks south of 41&deg;43&prime;N (except flies/lures).",
+        "notes": [
+          "SHORTFIN MAKO: retention is <b>ZERO</b> &mdash; release it, dead or alive.",
+          "Land sharks whole with fins naturally attached.",
+          "No bluefin tuna may be kept if any hammerhead is aboard."
+        ]
+      },
+      "charter": {
+        "statusLbl": "Open / limits",
+        "status": "partial",
+        "size": "<b>54\" fork length</b> min for most species (none for Atlantic sharpnose &amp; bonnethead).",
+        "limit": "<b>1 shark per VESSEL per trip</b>, PLUS 1 Atlantic sharpnose AND 1 bonnethead per PERSON.",
+        "permit": "HMS <b>Charter/Headboat</b> permit WITH the <b>Shark Endorsement</b>. Circle-hook rule applies south of 41&deg;43&prime;N. For-hire <b>eVTR</b> reporting required.",
+        "notes": [
+          "SHORTFIN MAKO: retention ZERO — release dead or alive.",
+          "Land sharks whole with fins naturally attached."
+        ]
+      },
+      "comm": {
+        "statusLbl": "By quota",
+        "status": "partial",
+        "size": "Varies by complex; many large coastal sharks 54\"+ &mdash; see the HMS Commercial Compliance Guide.",
+        "limit": "Retention limits are set by species complex &amp; region and adjusted in-season (e.g. large-coastal-shark trip limits); complexes open and close by quota.",
+        "permit": "Atlantic Shark <b>Directed</b> or <b>Incidental</b> limited-access permit (or Smoothhound open-access). Sell only to permitted dealers.",
+        "notes": [
+          "Shortfin mako retention is ZERO in commercial fisheries too.",
+          "The prohibited-species list below applies to commercial too."
+        ]
+      }
+    }
+  }
+}
