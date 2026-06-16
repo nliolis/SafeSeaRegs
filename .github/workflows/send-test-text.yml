@@ -1,0 +1,14 @@
+name: Send test text
+on:
+  workflow_dispatch: {}
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send a test text
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          SMS_TO: ${{ secrets.SMS_TO }}
+        run: |
+          python3 -c "import os,smtplib,ssl;from email.mime.text import MIMEText;u=os.environ['MAIL_USERNAME'];p=os.environ['MAIL_PASSWORD'];to=os.environ['SMS_TO'];m=MIMEText('SafeSea test - if you got this, your alerts work!');m['From']=u;m['To']=to;m['Subject']='SafeSea';ctx=ssl.create_default_context();s=smtplib.SMTP('smtp.gmail.com',587);s.starttls(context=ctx);s.login(u,p);s.sendmail(u,[to],m.as_string());s.quit();print('sent to',to)"
